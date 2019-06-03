@@ -1,0 +1,185 @@
+// classes em javascript
+
+// var appElement = document.querySelector('div#app')
+// var buttonElement = document.createElement('input')
+// buttonElement.setAttribute('type', 'button')
+// buttonElement.setAttribute('value', 'Adicionar')
+// appElement.appendChild(buttonElement)
+
+// class List{
+//     constructor(){
+//         this.data = []
+//     }
+
+//     add(data){
+//         this.data.push(data)
+//         console.log(this.data)
+//     }
+// }
+
+// class TodoList extends List{
+//     constructor(){
+//         super()
+
+//         this.usuario = 'Stefano'
+//     }
+
+//     mostraUsuario(){
+//         console.log(this.usuario)
+//     }
+// }
+
+// var MinhaLista = new TodoList()
+
+// buttonElement.onclick = function(){
+//     MinhaLista.add('Novo todo')
+// }
+
+// MinhaLista.mostraUsuario()
+
+// classes estáticas
+
+// class Matematica {
+//     static soma(a, b){
+//         return a + b
+//     }
+// }
+
+// console.log(Matematica.soma(1, 3))
+
+// novas keywords
+// const
+// const usuario = {
+//     nome: 'Stefano'
+// }
+
+// usuario.nome = 'Clayton'
+// console.log(usuario)
+
+// let
+// function teste(x){
+//     let y = 2
+
+//     if(x > 5){
+//         console.log(x, y)
+//     }
+// }
+
+// teste(10)
+
+// vetores com ES6
+// const arr = [1, 3, 4, 5, 8, 9]
+
+// const newArr = arr.map(function(item, index){
+//     return item * index
+// })
+
+// console.log(newArr)
+
+// const sum = arr.reduce(function(total, next){
+//     return total + next
+// })
+
+// console.log(sum)
+
+// const filter = arr.filter(function(item){
+//     return item % 2 === 0
+// })
+// console.log(filter)
+
+// const find = arr.find(function(item){
+//     return item === 4
+// })
+// console.log(find)
+
+// Arrow Function
+// const arr = [1, 3, 4, 5, 6]
+
+// const newArr = arr.map(item => item * 2)
+// console.log(newArr)
+
+// const teste = () => [1, 2, 3]
+
+// console.log(teste())
+
+// Valores padrão
+// const soma = (a = 3, b = 6) => {
+//     return a + b
+// }
+
+// console.log(soma())
+
+// Desestruturação
+// const usuario = {
+//     nome: 'Stefano',
+//     idade: 23,
+//     endereco: {
+//         cidade: 'Fortaleza',
+//         estado: 'Ceará'
+//     }
+// }
+
+// const {nome, idade, endereco: { cidade, estado }} = usuario
+// console.log(cidade)
+
+// function mostraNome({nome, idade, endereco: { cidade, estado }} = usuario){
+//     console.log(nome, idade, estado, cidade)
+// }
+
+// mostraNome()
+
+// Operadores rest/spread
+
+// REST
+// const usuario = {
+//     nome: 'Stefano',
+//     idade: 23,
+//     empresa: 'Orion Telecom'
+// }
+
+// const { nome, ...resto } = usuario
+// console.log(nome)
+// console.log(resto)
+
+// const arr = [1, 2, 3, 4]
+// const [a, b, ...c] = arr
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+// function soma(...params){
+//     return params.reduce((total, next) => total + next)
+// }
+// console.log(soma(1, 3))
+
+// // SPREAD
+// const arr1 = [1, 2, 3]
+// const arr2 = [4, 5, 6]
+// const arr3 = [...arr1, ...arr2]
+// console.log(arr1)
+// console.log(arr2)
+// console.log(arr3)
+
+// const usuario1 = {
+//     nome: 'Stefano',
+//     idade: 23,
+//     empresa: 'Orion'
+// }
+
+// const usuario2 = {...usuario1, nome: 'Gabriel'}
+// console.log(usuario2)
+
+// Template String
+// const nome = 'Stefano', idade = 23
+// console.log(`Meu nome é ${nome} e eu tenho ${idade} anos.`)
+
+// Object Short Sintax
+// const nome = 'Stefano'
+// const idade = 23
+
+// const usuario = {
+//     nome,
+//     idade,
+//     empresa: 'Orion Telecom'
+// }
+// console.log(usuario)
